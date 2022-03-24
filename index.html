@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src= "script.js"></script>
+</head>
+<body>
+<div class="main-body">
+    <div class="calc">
+        <div class="output">
+            <input type="text" id="screen">
+        </div> 
+        <div class="buttons">
+        <div class="row">
+            <button class="num" id="yellow" onclick="clrscr()">C</button>
+        </div>
+            
+
+            <div class="row">
+                <button class="num btn-num" onclick="buttonclick(7)">7</button>
+                <button class="num" onclick="buttonclick(8)">8</button>
+                <button class="num" onclick="buttonclick(9)">9</button>
+                <button class="num btn-operation" onclick="operationbuttonclick('/')" this.onclick = "null">/</button>
+            </div>
+            <div class="row">
+                <button class="num" onclick="buttonclick(4)">4</button>
+                <button class="num" onclick="buttonclick(5)">5</button>
+                <button class="num" onclick="buttonclick(6)">6</button>
+                <button class="num btn-operation" onclick="operationbuttonclick('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="num" onclick="buttonclick(1)">1</button>
+                <button class="num" onclick="buttonclick(2)">2</button>
+                <button class="num" onclick="buttonclick(3)">3</button>
+                <button class="num btn-operation" onclick="operationbuttonclick('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="num" onclick="buttonclick('.')">.</button>
+                <button class="num" onclick="buttonclick(0)">0</button>
+                <button class="num" id="red" onclick="buttonEqual()">=</button>
+                <button class="num btn-operation" onclick="operationbuttonclick('+')">+</button>
+            </div>
+        </div>
+            
+        </div>
+
+</div>
+</body>
+</html>
